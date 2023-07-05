@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Sortable - Default functionality</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+     #resizable { background:linear-gradient(rgb(224, 31, 60),rgb(0, 255, 13)); }
+   
+    #sortable {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 60%;
+    }
+
+    #sortable li {
+      margin: 0 3px 3px 3px;
+      padding: 0.4em;
+      padding-left: 1.5em;
+      font-size: 1.4em;
+      height: 18px;
+      background: linear-gradient(pink, yellowgreen);
+    }
+
+    #sortable li span {
+      position: absolute;
+      margin-left: -1.3em;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#sortable").sortable();
+    });
+    $( function() {
+    $( "#resizable" ).resizable();
+  } );
+  </script>
+</head>
+
+<body>
+
+  
+  <div id="resizable" class="ui-widget-content">
+    <ul id="sortable">
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><i class="fa fa-bookmark"
+          aria-hidden="true"></i>
+      Bookmark</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><i class="fa fa-barcode" aria-hidden="true"></i>
+      Barcode</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><i class="fa fa-cloud-download" aria-hidden="true"></i>
+      Cloud-download</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><i class="fa fa-folder" aria-hidden="true"></i>
+        Folder</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><i class="fa fa-picture-o" aria-hidden="true"></i>
+      Image</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><i class="fa fa-plane" aria-hidden="true"></i>
+      Plane</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><i class="fa fa-power-off" aria-hidden="true"></i>
+      Power-off</li>
+    </ul>
+    
+  </div>
+   
+
+</body>
+
+</html>

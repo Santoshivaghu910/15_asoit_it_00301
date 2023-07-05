@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
+      });
+    });
+  </script>
+  <style>
+    .div {
+      text-align: center;
+      background: linear-gradient(rgb(245, 134, 221), yellowgreen, yellow);
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="div">
+   <center> <h1> HELLO </h1>
+
+    <button>Click to fade in/out boxes </button><br><br>
+
+    <div id="div1" style="width:200px;height:200px;background-color: rgb(234, 91, 234);"><img src="/1.jpg"
+        style="height:10px , width=20px"></img></div>
+    <br>
+    <div id="div2" style="width:200px;height:200px;background-color:rgb(34, 251, 34);"><img src="/1.jpg"
+        style="height:10px , width=20px"></div>
+    <br>
+    <div id="div3" style="width:200px;height:200px;background-color:rgb(220, 237, 31);"><img src="/1.jpg"
+        style="height:10px , width=20px"></div>
+
+  </div></center>
+
+</body>
+
+</html>
